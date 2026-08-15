@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
 import { Reveal } from "./Reveal";
 import { plans } from "../data/projects";
 
 export function Pricing() {
   return (
     <section
-      id="pricing"
-      className="relative z-10 bg-bg/86 backdrop-blur-[2px] border-t border-hairline px-5 py-20 sm:px-9 sm:py-28 lg:px-18 lg:py-40"
+      className="relative z-10 min-h-[100svh] bg-bg/86 backdrop-blur-[2px] px-5 pt-32 pb-20 sm:px-9 sm:pt-40 sm:pb-28 lg:px-18 lg:pb-40"
     >
       <Reveal className="mb-9 sm:mb-16">
         <h2 className="m-0 font-display font-bold text-[clamp(30px,5vw,66px)] tracking-[-0.04em]">Pricing</h2>
@@ -28,14 +28,14 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className={`inline-flex items-center justify-center gap-3 rounded-full border px-6 py-3.5 font-mono text-[13px] tracking-[0.14em] uppercase transition-colors duration-300 ${
                   plan.featured ? "border-fg bg-fg text-bg hover:bg-fg-hover" : "border-fg text-fg hover:bg-fg hover:text-bg"
                 }`}
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </Reveal>
         ))}

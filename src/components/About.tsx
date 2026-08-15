@@ -4,8 +4,7 @@ import { skills } from "../data/projects";
 export function About() {
   return (
     <section
-      id="about"
-      className="relative z-10 bg-bg/86 backdrop-blur-[2px] border-t border-hairline px-5 py-20 sm:px-9 sm:py-28 lg:px-18 lg:py-40 grid gap-8 sm:gap-14 lg:gap-20"
+      className="relative z-10 bg-bg/86 backdrop-blur-[2px] px-5 pt-32 pb-20 sm:px-9 sm:pt-40 sm:pb-28 lg:px-18 lg:pb-40 grid gap-8 sm:gap-14 lg:gap-20"
       style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 380px), 1fr))" }}
     >
       <Reveal>
