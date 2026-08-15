@@ -33,6 +33,7 @@ export const projects: Project[] = [
       { label: "Home", image: "/work/twh-home.jpg", width: 1000, height: 666 },
       { label: "About", image: "/work/twh-about.jpg", width: 1000, height: 593 },
       { label: "Classes", image: "/work/twh-classes.jpg", width: 1000, height: 443 },
+      { label: "Pricing", image: "/work/twh-pricing.jpg", width: 1000, height: 521 },
     ],
   },
   {
