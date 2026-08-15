@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     title: "BADDNA",
     year: "2026",
-    desc: "Brand site for a jewelry label — a fluid-particle WebGL background behind a minimal, monochrome wordmark and heart mark.",
+    desc: "Brand site for a Vancouver-based fashion label — a sultry, fluid-particle WebGL background behind a minimal, monochrome wordmark, built to feel as luxurious after dark as the pieces themselves.",
     pages: [
       { label: "Home", image: "/work/baddna-home.jpg", width: 1000, height: 666 },
       { label: "About", image: "/work/baddna-about.jpg", width: 1000, height: 666 },
