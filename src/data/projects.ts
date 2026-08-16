@@ -16,6 +16,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Seraya Private Island",
+    year: "2026",
+    desc: "A private-island resort site built around a live Three.js property map you can orbit and click through, plus a drag-to-look 360° panorama tour reused across four suites, the spa, and a private yacht charter.",
+    pages: [
+      { label: "Home", image: "/work/seraya-hero.jpg", width: 1000, height: 625 },
+      { label: "Property", image: "/work/seraya-property.jpg", width: 1000, height: 625 },
+      { label: "Interactive 3D map", image: "/work/seraya-map3d.jpg", width: 1000, height: 625 },
+      { label: "Suites & villas", image: "/work/seraya-suites.jpg", width: 1000, height: 625 },
+      { label: "360° room tour", image: "/work/seraya-room-tour.jpg", width: 1000, height: 625 },
+      { label: "Experiences", image: "/work/seraya-experiences.jpg", width: 1000, height: 697 },
+      { label: "360° yacht tour", image: "/work/seraya-yacht-tour.jpg", width: 1000, height: 625 },
+      { label: "Dining", image: "/work/seraya-dining.jpg", width: 1000, height: 625 },
+      { label: "Spa & wellness", image: "/work/seraya-spa.jpg", width: 1000, height: 625 },
+      { label: "Gallery", image: "/work/seraya-gallery.jpg", width: 1000, height: 625 },
+      { label: "Enquiry", image: "/work/seraya-enquiry.jpg", width: 1000, height: 625 },
+    ],
+  },
+  {
     title: "Ventura Coffee",
     year: "2026",
     desc: "Marketing microsite for a neighborhood coffee shop, built around warm serif type, a full-bleed editorial hero, and a menu that reads like a zine.",
