@@ -10,6 +10,8 @@ export interface Project {
   year: string;
   desc: string;
   pages: ProjectPage[];
+  /** Optional dedicated grid-card thumbnail, for when pages[0] is a full-page capture too tall for the cover crop. Defaults to pages[0]. */
+  cover?: ProjectPage;
 }
 
 export const projects: Project[] = [
@@ -45,6 +47,18 @@ export const projects: Project[] = [
       { label: "About", image: "/work/baddna-about.jpg", width: 1000, height: 666 },
       { label: "Store", image: "/work/baddna-store.jpg", width: 1000, height: 666 },
       { label: "Admin", image: "/work/baddna-admin.jpg", width: 1000, height: 400 },
+    ],
+  },
+  {
+    title: "Apex Gloss Mia",
+    year: "2026",
+    desc: "Site for a Miami auto-detailing and ceramic-coating studio — high-contrast black and hot pink, built to sell $1.4K–$6.5K packages to a clientele that photographs everything.",
+    cover: { label: "Home", image: "/work/apex-gloss-cover.jpg", width: 1000, height: 666 },
+    pages: [
+      { label: "Home", image: "/work/apex-gloss-home.jpg", width: 1000, height: 4253 },
+      { label: "Services", image: "/work/apex-gloss-services.jpg", width: 1000, height: 4062 },
+      { label: "Pricing", image: "/work/apex-gloss-pricing.jpg", width: 1000, height: 3085 },
+      { label: "About", image: "/work/apex-gloss-about.jpg", width: 1000, height: 3790 },
     ],
   },
 ];

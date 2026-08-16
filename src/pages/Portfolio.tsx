@@ -17,7 +17,7 @@ export function Portfolio() {
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, projectIdx) => {
-          const cover = p.pages[0];
+          const cover = p.cover ?? p.pages[0];
           return (
             <Reveal key={p.title}>
               <button
