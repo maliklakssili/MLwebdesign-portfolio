@@ -97,7 +97,7 @@ export const skills = [
 export const plans = [
   {
     name: "Landing",
-    price: "$499",
+    price: "Starting at $499",
     desc: "One page, done right.",
     features: [
       "1 custom designed landing page",
@@ -110,7 +110,7 @@ export const plans = [
   },
   {
     name: "Business",
-    price: "$1,499",
+    price: "Starting at $1,499",
     desc: "Full site, ready to sell.",
     features: [
       "Up to 7 custom design pages",
@@ -122,7 +122,7 @@ export const plans = [
   },
   {
     name: "Standard",
-    price: "$999",
+    price: "Starting at $999",
     desc: "Up to 5 pages, full brand.",
     features: [
       "Up to 5 custom design pages",
@@ -136,7 +136,7 @@ export const plans = [
 ];
 
 export const steps = [
-  { n: "01", title: "Scope", desc: "A short call, then a written plan with fixed price and dates." },
+  { n: "01", title: "Scope", desc: "Get in a call, then a written plan with fixed price and dates." },
   { n: "02", title: "Structure", desc: "Sitemap, copy outline and wireframes before any visuals." },
   { n: "03", title: "Design", desc: "Two directions, one chosen, refined to a full page set." },
   { n: "04", title: "Build", desc: "Hand-coded, tested on real devices, handed over with docs." },

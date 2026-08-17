@@ -40,6 +40,10 @@ export function Pricing() {
           </Reveal>
         ))}
       </div>
+
+      <p className="mt-9 sm:mt-12 font-mono text-xs tracking-[0.1em] uppercase text-caption">
+        Flexible on payment — payment plans available.
+      </p>
     </section>
   );
 }

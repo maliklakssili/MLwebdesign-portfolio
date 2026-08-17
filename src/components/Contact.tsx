@@ -23,14 +23,22 @@ export function Contact() {
           >
             (514) 664-7622
           </a>
+          <a
+            href="https://wa.me/15146647622"
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-3.5 rounded-full border border-fg px-7.5 py-4.5 font-mono text-[13px] tracking-[0.14em] uppercase text-fg transition-colors duration-300 hover:bg-fg hover:text-bg"
+          >
+            WhatsApp
+          </a>
         </div>
       </Reveal>
 
       <div className="flex flex-wrap justify-between gap-5 mt-16 sm:mt-24 lg:mt-32 pt-5.5 border-t border-hairline font-mono text-xs text-caption">
         <span>© 2026 MLwebdesign</span>
         <div className="flex gap-6">
-          <a href="#contact" className="hover:text-fg-hover transition-colors">Instagram</a>
-          <a href="#contact" className="hover:text-fg-hover transition-colors">Dribbble</a>
+          <a href="https://www.instagram.com/webdesign.ml/" target="_blank" rel="noopener" className="hover:text-fg-hover transition-colors">Instagram</a>
+          <a href="#contact" target="_blank" rel="noopener" className="hover:text-fg-hover transition-colors">Fiverr</a>
           <a href="#contact" className="hover:text-fg-hover transition-colors">LinkedIn</a>
         </div>
       </div>
