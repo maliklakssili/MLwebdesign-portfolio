@@ -7,8 +7,15 @@ import { About } from "./components/About";
 import { Process } from "./components/Process";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./pages/Portfolio";
+import { useSEO } from "./hooks/useSEO";
 
 function AboutPage() {
+  useSEO({
+    title: "About — MLwebdesign",
+    description:
+      "A web design studio building sites for studios, founders and small teams. Ten years building for the web.",
+    path: "/about",
+  });
   return (
     <>
       <About />

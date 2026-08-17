@@ -2,9 +2,16 @@ import { useState } from "react";
 import { Reveal } from "../components/Reveal";
 import { ProjectDocument } from "../components/ProjectDocument";
 import { projects } from "../data/projects";
+import { useSEO } from "../hooks/useSEO";
 
 export function Portfolio() {
   const [doc, setDoc] = useState<{ projectIdx: number; pageIdx: number } | null>(null);
+
+  useSEO({
+    title: "Portfolio — MLwebdesign",
+    description: "A selection of recent projects — full case studies from MLwebdesign, page by page.",
+    path: "/portfolio",
+  });
 
   return (
     <section className="relative z-10 min-h-[100svh] px-5 pt-32 pb-24 sm:px-9 sm:pt-40 lg:px-18 lg:pb-32">

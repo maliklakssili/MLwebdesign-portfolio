@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import { RotatingGlobe } from "./RotatingGlobe";
+import { useSEO } from "../hooks/useSEO";
 
 export function Hero() {
+  useSEO({
+    title: "MLwebdesign — Web design, done right.",
+    description:
+      "MLwebdesign — web design and front-end development for studios, founders, and small teams.",
+    path: "/",
+  });
   return (
     <section className="relative z-10 min-h-[100svh] flex flex-col justify-center px-5 pt-24 pb-12 sm:px-9 lg:px-18">
       <div

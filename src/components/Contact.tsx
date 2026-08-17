@@ -1,7 +1,13 @@
 import { Reveal } from "./Reveal";
 import { BusinessCard } from "./BusinessCard";
+import { useSEO } from "../hooks/useSEO";
 
 export function Contact() {
+  useSEO({
+    title: "Contact — MLwebdesign",
+    description: "Get in touch with MLwebdesign — email, phone, WhatsApp, or save the digital business card.",
+    path: "/contact",
+  });
   return (
     <section
       className="relative z-10 min-h-[100svh] px-5 pt-32 pb-12 sm:px-9 sm:pt-40 lg:px-18 lg:pt-44"

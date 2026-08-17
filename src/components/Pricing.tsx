@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import { Reveal } from "./Reveal";
 import { plans } from "../data/projects";
+import { useSEO } from "../hooks/useSEO";
 
 export function Pricing() {
+  useSEO({
+    title: "Pricing — MLwebdesign",
+    description:
+      "Landing pages from $499, full sites from $1,499. Flexible on payment, with payment plans available.",
+    path: "/pricing",
+  });
   return (
     <section
       className="relative z-10 min-h-[100svh] bg-bg/86 backdrop-blur-[2px] px-5 pt-32 pb-20 sm:px-9 sm:pt-40 sm:pb-28 lg:px-18 lg:pb-40"
