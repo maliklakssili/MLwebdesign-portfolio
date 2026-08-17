@@ -176,9 +176,7 @@ export function RotatingGlobe({ className = "" }: RotatingGlobeProps) {
 
     const loadWorldData = async () => {
       try {
-        const response = await fetch(
-          "https://raw.githubusercontent.com/martynafford/natural-earth-geojson/refs/heads/master/110m/physical/ne_110m_land.json"
-        );
+        const response = await fetch("/globe-land.json");
         if (!response.ok) throw new Error("Failed to load land data");
         landFeatures = await response.json();
 
