@@ -15,7 +15,7 @@ export function Pricing() {
       className="relative z-10 min-h-[100svh] bg-bg/86 backdrop-blur-[2px] px-5 pt-32 pb-20 sm:px-9 sm:pt-40 sm:pb-28 lg:px-18 lg:pb-40"
     >
       <Reveal className="mb-9 sm:mb-16">
-        <h2 className="m-0 font-display font-bold text-[clamp(30px,5vw,66px)] tracking-[-0.04em]">Pricing</h2>
+        <h1 className="m-0 font-display font-bold text-[clamp(30px,5vw,66px)] tracking-[-0.04em]">Pricing</h1>
       </Reveal>
 
       <div className="grid gap-5 sm:gap-6" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))" }}>

@@ -40,7 +40,11 @@ export function Portfolio() {
                   <img
                     src={cover.image}
                     alt={`${p.title} — ${cover.label}`}
+                    width={cover.width}
+                    height={cover.height}
                     draggable={false}
+                    loading={projectIdx === 0 ? "eager" : "lazy"}
+                    decoding="async"
                     className="h-full w-full object-cover select-none transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex items-end bg-black/0 transition-colors duration-300 group-hover:bg-black/30">

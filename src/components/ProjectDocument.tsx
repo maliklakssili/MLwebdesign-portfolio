@@ -62,8 +62,19 @@ export function ProjectDocument({ project, initialPage, onClose }: ProjectDocume
                 <div className="mb-3 font-mono text-[11px] tracking-[0.14em] uppercase text-slot-caption">
                   {(i + 1).toString().padStart(2, "0")} — {pg.label}
                 </div>
-                <div className="overflow-hidden border border-hairline bg-fill-a shadow-lg">
-                  <img src={pg.image} alt={`${project.title} — ${pg.label}`} className="h-auto w-full" />
+                <div
+                  className="overflow-hidden border border-hairline bg-fill-a shadow-lg"
+                  style={{ aspectRatio: `${pg.width} / ${pg.height}` }}
+                >
+                  <img
+                    src={pg.image}
+                    alt={`${project.title} — ${pg.label}`}
+                    width={pg.width}
+                    height={pg.height}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                    className="h-auto w-full"
+                  />
                 </div>
               </div>
             ))}

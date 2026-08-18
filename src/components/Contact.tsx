@@ -15,9 +15,9 @@ export function Contact() {
     >
       <div className="grid items-start gap-14 lg:grid-cols-[1fr_auto] lg:gap-24">
         <Reveal className="max-w-[22em]">
-          <h2 className="m-0 font-display font-medium text-[clamp(38px,8vw,110px)] leading-[.95] tracking-[-0.045em]">
+          <h1 className="m-0 font-display font-medium text-[clamp(38px,8vw,110px)] leading-[.95] tracking-[-0.045em]">
             Let's build something.
-          </h2>
+          </h1>
           <div className="flex flex-wrap gap-4 mt-9">
             <a
               href="mailto:contact@mlwebdesign.ca"
