@@ -7,6 +7,7 @@ import { About } from "./components/About";
 import { Process } from "./components/Process";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./pages/Portfolio";
+import { ProjectPage } from "./pages/ProjectPage";
 import { useSEO } from "./hooks/useSEO";
 
 function AboutPage() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:slug" element={<ProjectPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

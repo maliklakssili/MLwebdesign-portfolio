@@ -1,12 +1,9 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
-import { ProjectDocument } from "../components/ProjectDocument";
 import { projects } from "../data/projects";
 import { useSEO } from "../hooks/useSEO";
 
 export function Portfolio() {
-  const [doc, setDoc] = useState<{ projectIdx: number; pageIdx: number } | null>(null);
-
   useSEO({
     title: "Portfolio — MLwebdesign",
     description: "A selection of recent projects — full case studies from MLwebdesign, page by page.",
@@ -27,9 +24,8 @@ export function Portfolio() {
           const cover = p.cover ?? p.pages[0];
           return (
             <Reveal key={p.title}>
-              <button
-                type="button"
-                onClick={() => setDoc({ projectIdx, pageIdx: 0 })}
+              <Link
+                to={`/portfolio/${p.slug}`}
                 className="group block w-full text-left"
                 aria-label={`Open ${p.title} case study`}
               >
@@ -58,19 +54,11 @@ export function Portfolio() {
                   <span className="font-mono text-[11px] text-caption">{p.year}</span>
                 </div>
                 <p className="mt-1.5 mb-0 text-sm leading-[1.5] text-muted">{p.desc}</p>
-              </button>
+              </Link>
             </Reveal>
           );
         })}
       </div>
-
-      {doc !== null && (
-        <ProjectDocument
-          project={projects[doc.projectIdx]}
-          initialPage={doc.pageIdx}
-          onClose={() => setDoc(null)}
-        />
-      )}
     </section>
   );
 }

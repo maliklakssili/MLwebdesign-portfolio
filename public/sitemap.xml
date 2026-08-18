@@ -21,6 +21,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mlwebdesign.ca/portfolio/seraya-private-island</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mlwebdesign.ca/portfolio/ventura-coffee</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mlwebdesign.ca/portfolio/studio-twh</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mlwebdesign.ca/portfolio/baddna</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mlwebdesign.ca/portfolio/apex-gloss-mia</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.mlwebdesign.ca/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

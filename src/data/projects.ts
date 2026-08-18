@@ -6,6 +6,7 @@ export interface ProjectPage {
 }
 
 export interface Project {
+  slug: string;
   title: string;
   year: string;
   desc: string;
@@ -16,6 +17,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "seraya-private-island",
     title: "Seraya Private Island",
     year: "2026",
     desc: "A private-island resort site built around a live Three.js property map you can orbit and click through, plus a drag-to-look 360° panorama tour reused across four suites, the spa, and a private yacht charter.",
@@ -34,6 +36,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "ventura-coffee",
     title: "Ventura Coffee",
     year: "2026",
     desc: "Marketing microsite for a neighborhood coffee shop, built around warm serif type, a full-bleed editorial hero, and a menu that reads like a zine.",
@@ -46,6 +49,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "studio-twh",
     title: "Studio TWH",
     year: "2026",
     desc: "Landing page for a women's boxing studio — bold condensed type, a stone-and-black palette, and a class-booking flow that gets out of the way.",
@@ -57,6 +61,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "baddna",
     title: "BADDNA",
     year: "2026",
     desc: "Brand site for a Vancouver-based fashion label — a sultry, fluid-particle WebGL background behind a minimal, monochrome wordmark, built to feel as luxurious after dark as the pieces themselves.",
@@ -68,6 +73,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "apex-gloss-mia",
     title: "Apex Gloss Mia",
     year: "2026",
     desc: "Site for a Miami auto-detailing and ceramic-coating studio — high-contrast black and hot pink, built to sell $1.4K–$6.5K packages to a clientele that photographs everything.",
